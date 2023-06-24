@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperture converter</title>
+</head>
+
+<!-- css start -->
+<style>
+    #container {
+        background-image: url(./chemistry.avif);
+        height: 30vh;
+        padding: 10% 20%;
+        text-align: center;
+
+    }
+
+    h1 {
+        text-align: center;
+        background-color: rgb(80, 80, 253);
+        color: white;
+        padding: 10px;
+        margin: 0px;
+        border: 2px solid black;
+    }
+
+    .input-div {
+        display: inline-block;
+    }
+
+    .inp {
+
+        padding: 5px 10px;
+        margin: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        width: 250px;
+        box-shadow: 5px 5px rgb(80, 80, 107);
+
+    }
+   
+
+    label {
+        /* text-align: center; */
+        color: rgb(238, 238, 240);
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <h1>Temperature converter</h1>
+    <div id="container">
+
+        <div class="input-div">
+            <label> Celcius </label><br>
+            <input type="number" value="0" class="inp" id="cal">
+        </div>
+
+        <div class="input-div">
+            <label> Fahrenhite </label><br>
+            <input type="number" value="32" class="inp" id="fah">
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script>
+        var cal = document.getElementById("cal");
+        var fah = document.getElementById("fah");
+
+        cal.addEventListener("input", function () {
+            let c = this.value;
+            let f = (c * 9 / 5) + 32;
+            if(!Number.isInteger(f)) {
+                f=f.toFixed(4);
+            }
+            fah.value = f;
+        });
+
+        fah.addEventListener("input", function () {
+            let f = this.value;
+            let c = (f - 32) * 5 / 9;
+            if(!Number.isInteger(c)) {
+                c=c.toFixed(4);
+            }
+            cal.value = c;
+        });
+    </script>
+
+
+
+</body>
+
+</html>
