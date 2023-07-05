@@ -7,9 +7,8 @@
         height: 30vh;
         padding: 10% 20%;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
+        
         
 
     }
@@ -34,7 +33,7 @@
         font-size: 30px;
         font-weight: bold;
         width: 250px;
-        box-shadow: 5px 5px rgb(80, 80, 107);
+        box-shadow: 5px 5px 10px rgb(242, 242, 248);
 
     }
    
