@@ -1,0 +1,46 @@
+
+    body{
+        padding: 5%;
+    }
+    #container {
+        background-image: url(./chemistry.avif);
+        height: 30vh;
+        padding: 10% 20%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    h1 {
+        text-align: center;
+        background-color: rgb(80, 80, 253);
+        color: white;
+        padding: 10px;
+        margin: 0px;
+        border: 2px solid black;
+    }
+
+    .input-div {
+        display: inline-block;
+    }
+
+    .inp {
+
+        padding: 5px 10px;
+        margin: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        width: 250px;
+        box-shadow: 5px 5px rgb(80, 80, 107);
+
+    }
+   
+
+    label {
+        /* text-align: center; */
+        color: rgb(238, 238, 240);
+        font-size: 30px;
+    }
