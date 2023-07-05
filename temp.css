@@ -8,14 +8,11 @@
         padding: 10% 20%;
         text-align: center;
         
-        
-        
-
     }
 
     h1 {
         text-align: center;
-        background-color: rgb(80, 80, 253);
+        background-color: rgb(44, 44, 218);
         color: white;
         padding: 10px;
         margin: 0px;
@@ -37,7 +34,6 @@
 
     }
    
-
     label {
         /* text-align: center; */
         color: rgb(238, 238, 240);
